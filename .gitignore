@@ -1,0 +1,55 @@
+#built application files
+*.apk
+*.ap_
+*.aab
+                           
+# files for the dex VM
+*.dex
+                            
+# Java class files
+*.class
+                            
+# generated files
+bin/
+gen/
+                            
+# Local configuration file (sdk path, etc)
+local.properties
+                        
+# Windows thumbnail db
+Thumbs.db
+                
+# OSX files
+.DS_Store
+                            
+# Android Studio
+*.iml
+.gradle
+build/
+.navigation
+captures/
+output.json 
+    
+#NDK
+obj/
+.externalNativeBuild
+
+#XCode
+iosApp/.DS_Store
+iosApp/.Trashes
+iosApp/*.swp
+iosApp/*.lock
+iosApp/*~.nib
+iosApp/DerivedData/
+iosApp/build/
+iosApp/*.pbxuser
+iosApp/*.mode1v3
+iosApp/*.mode2v3
+iosApp/*.perspectivev3
+iosApp/!default.pbxuser
+iosApp/!default.mode1v3
+iosApp/!default.mode2v3
+iosApp/!default.perspectivev3
+iosApp/*.xccheckout
+iosApp/xcuserdata/
+iosApp/*.moved-aside
