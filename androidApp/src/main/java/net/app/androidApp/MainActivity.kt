@@ -10,6 +10,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -68,7 +72,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Main(Greeting().greeting())
+                    Main()
                 }
             }
         }
@@ -76,8 +80,18 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Main(text: String) {
+fun Main() {
+    var count by remember { mutableStateOf(0) }
     Column(Modifier.fillMaxSize(), Arrangement.spacedBy(5.dp)) {
-        Text(text = text, modifier = Modifier.align(Alignment.CenterHorizontally))
+        Text(text = Greeting().greeting(), modifier = Modifier.align(Alignment.CenterHorizontally))
+        Text(text = "Count $count", modifier = Modifier.align(Alignment.CenterHorizontally))
+        Button(onClick = { count++ }, modifier = Modifier.align(Alignment.CenterHorizontally)) {
+            Text(text = "Aumentar")
+        }
+        Button(onClick = { count = 0 }, modifier = Modifier.align(Alignment.CenterHorizontally)) {
+            Text(text = "Reset")
+        }
     }
 }
+
+
