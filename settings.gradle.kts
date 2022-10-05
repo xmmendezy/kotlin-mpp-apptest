@@ -12,5 +12,5 @@ rootProject.name = "AppTest"
 
 include(":androidApp")
 include(":desktopApp")
+include(":compose")
 include(":common")
-
