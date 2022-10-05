@@ -22,6 +22,11 @@ kotlin {
         }
     }
 
+    js(IR) {
+        browser()
+        binaries.executable()
+    }
+
     sourceSets {
         val commonMain by getting
         val commonTest by getting {
@@ -51,6 +56,8 @@ kotlin {
         }
         val desktopMain by getting
         val desktopTest by getting
+        val jsMain by getting
+        val jsTest by getting
     }
 }
 

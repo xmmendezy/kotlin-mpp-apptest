@@ -53,3 +53,8 @@ iosApp/!default.perspectivev3
 iosApp/*.xccheckout
 iosApp/xcuserdata/
 iosApp/*.moved-aside
+
+#Web
+webApp/.kobweb/site/
+webApp/.kobweb/server/
+kotlin-js-store

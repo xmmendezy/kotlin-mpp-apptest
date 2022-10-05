@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="webapp">
+    <output-path>$PROJECT_DIR$/webApp/build/libs</output-path>
+    <root id="archive" name="webapp.jar">
+      <element id="module-output" name="AppTest.webApp.jvmMain" />
+    </root>
+  </artifact>
+</component>

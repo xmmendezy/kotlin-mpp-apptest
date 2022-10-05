@@ -6,7 +6,7 @@ plugins {
     id("org.jetbrains.compose") version "1.1.0"
 }
 
-group = "net.app.desktopApp"
+group = "net.app"
 version = "1.0"
 
 kotlin {

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="webApp-js-1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/webApp/build/libs</output-path>
+    <root id="archive" name="webApp-js-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="AppTest.webApp.jsMain" />
+    </root>
+  </artifact>
+</component>
